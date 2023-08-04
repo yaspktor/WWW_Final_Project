@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    
+    background: #211D1B;
+    color: white;
+    overflow-x: hidden;
+  }
+#button1{
+  background-color: #04aa6d;
+  border: #04aa6d;
+}
+
+.topnav {
+    background-color:#211D1B;
+    overflow: hidden;
+    font-family: cursor, monospace;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #04aa6d;
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  .topnav a.active {
+    background-color: #04aa6d;
+    color: white;
+  }

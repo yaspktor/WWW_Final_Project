@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Projekt koncowy">
+    <title>My | Galeria</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_p.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="topnav">
+            <a  href="index.html">Terminal</a>
+            <a  href="historia.html">Historia</a>
+            <a  class="active" href="galeria.html">Galeria</a>
+            <a  href="info.html">Informacje</a>
+            <a  href="linki.html">Linki</a>
+          </div>
+    </div>
+    <div class="containter-fluid">
+        
+        <h2 class="text-center m-5">Galeria zdjęć</h2>
+
+
+
+        <div id="carousel" class="carousel slide w-50 mx-auto" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img   src="img/textdiskman.gif" class="d-block w-100" alt="grafika z systemem tekstowym">
+                <div class="carousel-caption d-none d-md-block position-static" >
+                  <h5>Power Menu</h5>
+                  <p>Aplikacja zarządzająca dyskiem.
+                    Sterowany jest on całkowicie z klawiatury przy wykorzystaniu klawiszy kursora do nawigacji 
+                    oraz wizualnych list menu wywoływanych skrótami klawiszowymi.</p>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/textdosshell.gif" class="d-block w-100" alt="grafika z systemem tekstowym">
+                <div class="carousel-caption d-none d-md-block position-static">
+                  <h5>MS-DOS Shell</h5>
+                  <p>Program zarządzania plikami pracujący w trybie tekstowym.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/textexchangedos.png" class="d-block w-100" alt="grafika z systemem tekstowym">
+                <div class="carousel-caption d-none d-md-block position-static">
+                  <h5>Microsoft Exchange dla DOS</h5>
+                  <p>Program poczty elektronicznej pracujący w trybie tekstowym.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/textlynx.gif" class="d-block w-100" alt="grafika z systemem tekstowym">
+                <div class="carousel-caption d-none d-md-block position-static">
+                  <h5>Lynx</h5>
+                  <p>Popularna przeglądarka sieciowa pracująca tekstowo, która wyświetla witrynę Slashdot.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev position-fixed" style="height: 50%;  margin-top: 150px;" 
+            type="button" data-bs-target="#carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Poprzedni</span>
+            </button>
+            <button class="carousel-control-next position-fixed" style="height: 50%;  margin-top: 150px;" 
+             type="button" data-bs-target="#carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Następny</span>
+            </button>
+          </div>
+
+
+  
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     
+    </body>
+
+</html>

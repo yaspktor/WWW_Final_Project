@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #1d8b2a;
+    background: #211D1B;
+    font-family: cursor, monospace;
+    overflow-x: hidden;
+  }
+  .full{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+#full{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+    z-index: -100;
+    filter:opacity(0%);
+    
+    
+}
+
+
+#kontener{
+  width: 100%;
+  height: 100%;
+}
+
+#window{
+  
+  padding: 50px;
+  left: 50%;
+  top: 10%;
+  
+  position:absolute;
+  background: rgba(33, 29, 27, 1);
+  transform: translateX(-50%) ;
+  
+  
+}
+::selection {
+    color: #211830;
+    background-color: #519975;
+    
+  }
+::-moz-selection {
+    color: #211830;
+    background-color: #519975;
+  }
+textarea {
+    left: -10000px;
+    position: absolute;
+  }
+b {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+ 
+.cursor {
+    font-size: 12px;
+    color: #73ABAD;
+    background-color: #73ABAD;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+  }
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+#command {
+    cursor: text;
+    height: 50px;
+    color: #73ABAD;
+  }
+#liner {
+    line-height: 1.3em;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+  }
+#liner::before {
+    color: #1d8b2a;
+    content: "zaq1@my-terminal:~$ ";
+  }
+#liner.password::before {
+    content: "Password:";
+  }
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+  }
+.no-animation {
+    animation: typing 0 steps(30, end);
+  }
+.margin {
+    margin-left: 20px;
+  }
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+.index {
+  color: #e9e9e9;
+}
+.color2 {
+  color: #d4d4ba;
+}
+.command {
+  color: #70d8db;
+  text-shadow: 0 0 5px #73ABAD; 
+}
+.error {
+  color: #e73131;
+}
+.white {
+  color: #fff;
+}
+.inherit,
+a {
+  color: #f38dd3;
+}
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  background: #73ABAD;
+  color: #211830;
+}
+a:focus {
+  outline: 0;
+}
+
+.links{
+  font-size: 22px;
+  animation: typing 0 steps(30, end);
+  
+  white-space: pre;
+  color: #fff;
+  opacity: .7;
+
+}
+
+center{
+  animation: typing 0 steps(30, end);
+}
+#array {
+  color: #519975;
+	
+	height: 413px;
+	width: 598px;
+	margin: auto;
+	position: relative;
+	margin-top: 64px;
+}
+
+.block {
+	width: 28px;
+	background-color: #6b5b95;
+	position: absolute;
+	bottom: 0px;
+	transition: 0.2s all ease;
+}
+
+.block_id {
+	position: absolute;
+	color: #519975;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
+.podmiana{
+  position: absolute;
+	color: #519975;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
+
+
+/* NAV bar */
+
+.topnav {
+ 
+  overflow: hidden;
+  
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #04aa6d;
+  color: rgb(255, 255, 255);
+}
+
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
